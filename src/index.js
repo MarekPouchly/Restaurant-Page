@@ -19,12 +19,21 @@ function createNavigation() {
 
     const homeBtn = document.createElement('button');
     homeBtn.textContent = "Home"
+    homeBtn.addEventListener('click', (e) => {
+        console.log(e.target.textContent);
+    })
 
     const menuBtn = document.createElement('button');
-    menuBtn.textContent = "Menu"
+    menuBtn.textContent = "Menu";
+    menuBtn.addEventListener('click', (e) => {
+        console.log(e.target.textContent);
+    })
 
     const contactBtn = document.createElement('button');
-    contactBtn.textContent = "Contact"
+    contactBtn.textContent = "Contact";
+    contactBtn.addEventListener('click', (e) => {
+        console.log(e.target.textContent);
+    })
 
     nav.appendChild(homeBtn);
     nav.appendChild(menuBtn);
