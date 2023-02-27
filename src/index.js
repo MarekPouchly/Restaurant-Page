@@ -5,7 +5,7 @@ function createHeader() {
     header.classList.add('header');
 
     const title = document.createElement('h1');
-    title.classList.add('restaurant-name');
+    title.classList.add('title');
     title.textContent = "Pizzeria";
 
     header.appendChild(title);
@@ -19,18 +19,21 @@ function createNavigation() {
 
     const homeBtn = document.createElement('button');
     homeBtn.textContent = "Home"
+    homeBtn.classList.add('navBtn');
     homeBtn.addEventListener('click', (e) => {
         console.log(e.target.textContent);
     })
 
     const menuBtn = document.createElement('button');
     menuBtn.textContent = "Menu";
+    menuBtn.classList.add('navBtn');
     menuBtn.addEventListener('click', (e) => {
         console.log(e.target.textContent);
     })
 
     const contactBtn = document.createElement('button');
     contactBtn.textContent = "Contact";
+    contactBtn.classList.add('navBtn');
     contactBtn.addEventListener('click', (e) => {
         console.log(e.target.textContent);
     })
