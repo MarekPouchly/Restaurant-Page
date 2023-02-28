@@ -1,6 +1,8 @@
 function createMenu() {
     const div = document.createElement('div');
-    div.textContent = "Menu";
+    div.classList.add('menu');
+    div.textContent = "Hello"
+
     return div;
 };
 

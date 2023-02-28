@@ -24,9 +24,8 @@ function createNavigation() {
     const homeBtn = document.createElement('button');
     homeBtn.textContent = "Home"
     homeBtn.classList.add('navBtn');
-    homeBtn.addEventListener('click', (e) => {
-        console.log(e.target.textContent);
-        const main = document.getElementsByClassName('main')[0]
+    homeBtn.addEventListener('click', () => {
+        const main = document.getElementById('main');
         main.textContent = "";
         main.appendChild(createHome());
     })
@@ -36,6 +35,9 @@ function createNavigation() {
     menuBtn.classList.add('navBtn');
     menuBtn.addEventListener('click', (e) => {
         console.log(e.target.textContent);
+        const main = document.getElementById('main');
+        main.textContent = "";
+        main.appendChild(createMenu());
     })
 
     const contactBtn = document.createElement('button');
@@ -43,6 +45,9 @@ function createNavigation() {
     contactBtn.classList.add('navBtn');
     contactBtn.addEventListener('click', (e) => {
         console.log(e.target.textContent);
+        const main = document.getElementById('main');
+        main.textContent = "";
+        main.appendChild(createContact());
     })
 
     nav.appendChild(homeBtn);
@@ -55,6 +60,7 @@ function createNavigation() {
 function createMain() {
     const main = document.createElement('main');
     main.classList.add('main');
+    main.setAttribute('id', 'main');
 
 
     return main;

@@ -1,6 +1,7 @@
 function createContact() {
     const div = document.createElement('div');
-    div.textContent = "Contact";
+    div.classList.add('contact');
+
     return div;
 };
 
