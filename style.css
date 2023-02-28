@@ -1,5 +1,6 @@
 :root {
     --font-color: #eee;
+    --background: rgba(1, 1, 1, 0.6);
 }
 
 html {
@@ -19,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(1, 1, 1, 0.7);
+    background-color: var(--background);
     padding: 1rem 0;
 }
 
@@ -43,4 +44,12 @@ body {
 .navBtn:hover, .navBtn:focus {
     transform: translateY(-10%);
     border-bottom: 2px solid var(--font-color);
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: var(--background);
 }
