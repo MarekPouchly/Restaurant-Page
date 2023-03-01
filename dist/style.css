@@ -67,6 +67,10 @@ body {
     border-bottom: 2px solid var(--font-color);
 }
 
+.navBtn.active {
+    border-bottom: 2px solid var(--font-color);
+}
+
 .main {
     flex-grow: 1;
     text-align: center;
