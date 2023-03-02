@@ -53,6 +53,7 @@ img {
 }
 
 .title {
+    font-family: 'Gloock', serif;
     font-size: 2rem;
     color: var(--golden);
 }
@@ -95,14 +96,19 @@ img {
 
 .home h1 {
     font-size: 4.5rem;
-    font-family: serif;
+    font-family: 'Gloock', serif;
+    letter-spacing: .3rem;
     margin: 1.5rem 0 2rem;
 }
 
 .home p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--golden);
     letter-spacing: .15rem;
+}
+
+.home p:first-child {
+    font-weight: bold;
 }
 
 .chef-image {
@@ -136,7 +142,8 @@ img {
 }
 
 .pizza-title {
-    letter-spacing: 0.1rem;
+    font-family: 'Gloock', serif;
+    letter-spacing: 0.2rem;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: .4rem;
