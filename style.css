@@ -5,6 +5,8 @@
     --lite-background: rgba(1, 1, 1, 0.50);
     --background: rgba(1, 1, 1, 0.6);
     --site-background: #e3d9d1;
+    --main-font: 'Montserrat', sans-serif;
+    --brand-font: 'Gloock', serif;
 }
 
 *,
@@ -23,7 +25,7 @@ body {
     background: url(./images/background.jpg);
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     color: var(--font-color);
     padding: 0;
     margin: 0;
@@ -53,18 +55,19 @@ img {
 }
 
 .title {
-    font-family: 'Gloock', serif;
+    font-family: var(--brand-font);
     font-size: 2rem;
     color: var(--golden);
 }
 
 .navBtn {
+    font-weight: bold;
     font-size: 1rem;
-    color: var(--font-color);
     background: none;
+    color: var(--font-color);
     padding: 1.5rem 1.5rem 1rem;
-    border: none;
     border-bottom: 2px solid transparent;
+    border: none;
     transition: 0.25s transform ease-in-out;
 }
 
@@ -96,7 +99,7 @@ img {
 
 .home h1 {
     font-size: 4.5rem;
-    font-family: 'Gloock', serif;
+    font-family: var(--brand-font);
     letter-spacing: .3rem;
     margin: 1.5rem 0 2rem;
 }
@@ -142,10 +145,7 @@ img {
 }
 
 .pizza-title {
-    font-family: 'Gloock', serif;
-    letter-spacing: 0.2rem;
     font-size: 1.5rem;
-    font-weight: bold;
     margin-bottom: .4rem;
 }
 
@@ -181,7 +181,7 @@ img {
 .footer {
     text-align: center;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.2rem 0rem 1.6rem;
     background-color: var(--background);
     border-top: 1px solid var(--border-color);
 }
