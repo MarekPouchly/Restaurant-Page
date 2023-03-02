@@ -61,9 +61,10 @@ function createMain() {
 function createFooter() {
     const footer = document.createElement('footer');
     footer.classList.add('footer');
+    const currentYear = new Date().getFullYear();
     
     const p = document.createElement('p');
-    p.textContent = "Copyright © 2023 Pouchlý Marek";
+    p.innerHTML = `Copyright &#169; ${currentYear} Pouchlý Marek`;
 
     footer.appendChild(p)
 
