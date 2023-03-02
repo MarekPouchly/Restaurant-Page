@@ -6,7 +6,7 @@ function createContact() {
     phoneNumber.textContent = '📞 +0123 456 789';
 
     const address = document.createElement('p');
-    address.textContent = '🏠 Sir Matt Busby Way, Old Trafford, Stretford, Manchester M16 0RA, United Kingdom'
+    address.textContent = '🏠 Sir Matt Busby Way, Old Trafford, Stretford, Manchester M16 0RA, UK'
 
     const map = document.createElement('iframe');
     map.setAttribute('id', 'map');

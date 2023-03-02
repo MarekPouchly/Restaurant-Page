@@ -21,7 +21,7 @@ function createNavigation() {
 
     const homeBtn = document.createElement('button');
     homeBtn.textContent = "Home"
-    homeBtn.classList.add('navBtn');
+    homeBtn.classList.add('navBtn', 'active');
     homeBtn.addEventListener('click', (e) => {
         setActiveButton(e.target);
         drawHome();
