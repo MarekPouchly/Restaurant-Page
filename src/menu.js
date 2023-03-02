@@ -39,7 +39,7 @@ function createCard(pizza, desc) {
 
     const title = document.createElement('h2');
     title.classList.add('pizza-title');
-    title.textContent = createTitle(pizza);
+    title.textContent = `Pizza ${createTitle(pizza)}`;
 
     const description = document.createElement('p');
     description.classList.add('pizza-description');

@@ -2,14 +2,12 @@ function createHome() {
     const div = document.createElement('div');
     div.classList.add('home');
 
-    const chefImage = document.createElement('img');
-    chefImage.classList.add('chef-image');
-    chefImage.src = "./images/chef.jpg";
+    const heading = document.createElement('h1');
+    heading.textContent = "Pizza and authentic Italian pasta";
 
-    div.appendChild(createParagraph("Real Italian Pizza"));
-    div.appendChild(createParagraph("Come and enjoy the unique taste of dishes prepared by the hands of the chef and his team. Friendly service, genuine Italian atmosphere and delicious wines guarantee you a pleasant time spent in Sapori Italiani - with an Italian."))
+    div.appendChild(createParagraph("PERFECT AND TASTY"));
+    div.appendChild(heading);
     div.appendChild(createParagraph("Since 2003"));
-    div.appendChild(chefImage);
 
     return div;
 };

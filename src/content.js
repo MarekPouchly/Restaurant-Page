@@ -8,7 +8,7 @@ function createHeader() {
 
     const title = document.createElement('h1');
     title.classList.add('title');
-    title.textContent = "Warehouse Pizzeria";
+    title.textContent = "Warehouse Pizza";
 
     header.appendChild(title);
     header.appendChild(createNavigation());
